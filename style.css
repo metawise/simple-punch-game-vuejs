@@ -4,3 +4,29 @@
     text-align: center;
     border: 1px solid #000;
 }
+
+.bag{
+    width: 500px;
+    height: 500px;
+    background: url(img/bag.png) no-repeat center center;
+    margin: 0 auto;
+}
+.burst{
+    background: url("img/bag-burst.png") no-repeat center center !important;;
+}
+#health{
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+    display: block;
+    margin: 30px auto;
+}
+#health div{
+    height: 20px;
+    background: coral;
+}
+.controller{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
