@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VueJS learning</title>
+    <!-- production version, optimized for size and speed -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <input type="text" v-on:type="name">
+    message: {{ message }}
+    name: {{ name }}
+    <p>
+        {{ greeting() }}
+    </p>
+    <a :href="website">{{ website }}</a>
+    <p v-html="webTag">
+    </p>
+    <hr>
+    <button v-on:click="add(1)">Add Age</button>
+    <button v-on:click="subtract(1)">Sub Age</button>
+    <button v-on:dblclick="add(10)">Add 10 years</button>
+    <button v-on:dblclick="subtract(10)">Sub 10 years</button>
+    <p>
+        {{ age }}
+    </p>
+    <hr>
+    <div id="canvas" v-on:mousemove="updateXY">{{ x }},{{ y }}</div>
+    <hr>
+    <template v-for="ninja in ninjas">
+        <strong>{{ninja.name}}</strong>
+    </template>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
